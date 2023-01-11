@@ -1,0 +1,9 @@
+body{
+        height: 100vh;
+        max-height: 900px;
+        background:  url(./img/back.jpg) no-repeat center center fixed rgba(55, 55, 55, 0.775);
+        background-size: cover;
+        min-height: 100%;
+        background-blend-mode: multiply;
+        
+}
