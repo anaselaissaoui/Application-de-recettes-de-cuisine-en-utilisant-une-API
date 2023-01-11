@@ -92,7 +92,7 @@ function receipeModal(meal){
     }
   
     let html =
-      "<div class='modal fade m-auto' aria-labelledby='exampleModalLabel' id='exampleModal' tabindex='-1' style='display:flex; opacity:1; aria.hidden='true'><div class='modal-dialog'>" +
+      "<div class='modal fade' aria-labelledby='exampleModalLabel' id='exampleModal' tabindex='-1' style='display:flex; opacity:1; aria.hidden='true'><div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>" +
       "<div class='modal-content'><div class='modal-header'><h1 class='modal-title fs-5' id='exampleModalLabel'>" +
       meal.strMeal +
       "</h1>" +
@@ -101,18 +101,19 @@ function receipeModal(meal){
       "<img src=" +
       meal.strMealThumb +
       " class='img-thumbnail ' style='height:200px;'>" +
-      "<h4>" +
+      "<h4>Category:&nbsp" +
       meal.strCategory +
       "</h4>" +
-      "<h4>" +
+      "<h4>Area:&nbsp" +
       meal.strArea +
       "</h4>" +
-      "<ul>" +
+      "<h4>Ingredients:</h4>"+
+      "<ul class='ms-5'>" +
       Ingredients +
       "</ul>" +
-      "<h4>" +
+      "<h4>Instructions:&nbsp</h4>"+"<p class='mx-3'>" +
       meal.strInstructions +
-      "</h4>" +
+      "</p>" +
       "</div></div></div></div>";
   
     document.getElementById("searchResult").insertAdjacentHTML("afterend", html);
