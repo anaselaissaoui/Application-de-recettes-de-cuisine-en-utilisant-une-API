@@ -1,15 +1,27 @@
-body{
-        height: 100vh;
-        max-height: 900px;
-        background:  url(./img/back.jpg) no-repeat center center fixed rgba(55, 55, 55, 0.775);
-        background-size: cover;
-        min-height: 100%;
-        background-blend-mode: multiply;
-        
+body {
+  height: 100vh;
+  max-height: 900px;
+  background: url(./img/back.jpg) no-repeat center center fixed
+    rgba(55, 55, 55, 0.775);
+  background-size: cover;
+  min-height: 100%;
+  background-blend-mode: multiply;
 }
 
-ul {
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
-      }
+#ulModal {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+#exampleModal {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  height: 100vh;
+  background-color: rgba(55, 55, 55, 0.775);
+}
+
+#mealPic {
+  display: flex;
+  justify-content: center;
+}
